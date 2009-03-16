@@ -1,0 +1,27 @@
+=== modified file 'src/shiny-switcher/shinyswitcher.schema-ini'
+--- src/shiny-switcher/shinyswitcher.schema-ini	2008-06-06 16:22:54 +0000
++++ src/shiny-switcher/shinyswitcher.schema-ini	2009-03-20 13:29:41 +0000
+@@ -1,11 +1,11 @@
+ [DEFAULT/rows]
+ type = int
+-default = 2
++default = 1
+ description = The number of rows in the pager.
+ 
+ [DEFAULT/columns]
+ type = int
+-default = 3
++default = 4
+ description = The number of columns in the pager.
+ 
+ [DEFAULT/background_alpha_active]
+@@ -20,7 +20,7 @@
+ 
+ [DEFAULT/applet_scale]
+ type = float
+-default = 0.95
++default = 0.8
+ description = Scales the applet size relative to the maximum icon size
+ 
+ [DEFAULT/show_icon_mode]
+
