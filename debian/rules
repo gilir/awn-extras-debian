@@ -1,35 +1,36 @@
 #!/usr/bin/make -f
-DEB_DH_INSTALL_SOURCEDIR=debian/tmp
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/gnome.mk
-include /usr/share/cdbs/1/rules/simple-patchsys.mk
+#DEB_DH_INSTALL_SOURCEDIR=debian/tmp
 
-DEB_CONFIGURE_EXTRA_FLAGS += 	--disable-pymod-checks \
-				--with-webkit
+#include /usr/share/cdbs/1/rules/debhelper.mk
+#include /usr/share/cdbs/1/class/gnome.mk
+#include /usr/share/cdbs/1/rules/simple-patchsys.mk
 
-DEB_DH_MAKESHLIBS_ARGS_libawn-extras0 += -V"libawn-extras0 (>= 0.3.2)"
+#DEB_CONFIGURE_EXTRA_FLAGS += 	--disable-pymod-checks \
+#				--with-webkit
 
-DEB_SHLIBDEPS_LIBRARY_awn-applets-c-core:= libawn-extras0
-DEB_SHLIBDEPS_INCLUDE_awn-applets-c-core:= debian/libawn-extras0/usr/
+#DEB_DH_MAKESHLIBS_ARGS_libawn-extras0 += -V"libawn-extras0 (>= 0.3.2)"
 
-DEB_SHLIBDEPS_LIBRARY_awn-applets-c-extras:= libawn-extras0
-DEB_SHLIBDEPS_INCLUDE_awn-applets-c-extras:= debian/libawn-extras0/usr/
+#DEB_SHLIBDEPS_LIBRARY_awn-applets-c-core:= libawn-extras0
+#DEB_SHLIBDEPS_INCLUDE_awn-applets-c-core:= debian/libawn-extras0/usr/
 
-DEB_DH_MAKESHLIBS_ARGS_awn-applets-c-core += -n --exclude=*
-DEB_DH_MAKESHLIBS_ARGS_awn-applets-c-extras += -n --exclude=*
+#DEB_SHLIBDEPS_LIBRARY_awn-applets-c-extras:= libawn-extras0
+#DEB_SHLIBDEPS_INCLUDE_awn-applets-c-extras:= debian/libawn-extras0/usr/
 
-binary-install/python-libawn-extras::
-	dh_pycentral -ppython-libawn-extras
+#DEB_DH_MAKESHLIBS_ARGS_awn-applets-c-core += -n --exclude=*
+#DEB_DH_MAKESHLIBS_ARGS_awn-applets-c-extras += -n --exclude=*
 
-binary-install/python-awnlib::
-	dh_pycentral -ppython-awnlib
+#binary-install/python-libawn-extras::
+#	dh_pycentral -ppython-libawn-extras
 
-binary-install/awn-applets-python-core::
-	dh_pycentral -pawn-applets-python-core
+#binary-install/python-awnlib::
+#	dh_pycentral -ppython-awnlib
 
-binary-install/awn-applets-python-extras::
-	dh_pycentral -pawn-applets-python-extras
+#binary-install/awn-applets-python-core::
+#	dh_pycentral -pawn-applets-python-core
 
-binary-install/python-awn-extras::
-	dh_pycentral -ppython-awn-extras
+#binary-install/awn-applets-python-extras::
+#	dh_pycentral -pawn-applets-python-extras
+
+#binary-install/python-awn-extras::
+#	dh_pycentral -ppython-awn-extras
