@@ -1,0 +1,7 @@
+# vim: set ft=automake ts=8 sts=8 sw=8:
+include $(top_srcdir)/Makefile.common
+include $(top_srcdir)/Makefile.desktop-files
+
+appletdir = $(applet_datadir)
+
+dist_applet_SCRIPTS = $(APPLET_MAIN_FILE)

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+X-AWN-AppletType=C
+Name=Awn Main Menu
+Comment=A main menu for Awn
+Exec=/usr/local/lib/awn/applets/main-menu/main-menu.so
+Icon=gnome-main-menu
+X-AWN-AppletCategory=Utility
