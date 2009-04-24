@@ -1,7 +1,36 @@
 #!/usr/bin/make -f
 
-%:
-	dh $@
+#DH_VERBOSE=1
+
+#Need debhelper 7.2.6
+#DEB_BUILD_OPTIONS=nocheck
+
+configure_flags += \
+		--disable-pymod-checks \
+		--with-webkit
+
+build: build-stamp
+build-stamp:
+	dh_testdir
+	dh_auto_configure -- 	$(configure_flags)
+	dh_auto_build
+	touch build-stamp
+
+clean:
+	dh clean
+
+install: build install-stamp
+install-stamp:
+	dh install
+	touch install-stamp
+
+binary-arch: install
+	dh binary-arch
+
+binary-indep: install
+	dh binary-indep
+
+binary: binary-arch binary-indep
 
 
 #DEB_DH_INSTALL_SOURCEDIR=debian/tmp
