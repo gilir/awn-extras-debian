@@ -143,7 +143,7 @@ Depends: 	${shlibs:Depends},
 		python-awnlib (>= 0.3.2),
 		fortune
 Recommends: 	awn-manager (>= 0.3~bzr489),
-		python-gnome2-desktop,
+		python-rsvg | python-gnome2-desktop,
 		python-xlib,
 Suggests: 	tomboy,
 Conflicts: awn-applets-python-core (<< 0.3~bzr912)
