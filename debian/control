@@ -204,7 +204,8 @@ Description: Python bindings for avant-window-navigator's applets
 Package: python-awnlib
 Section: python
 Architecture: any
-Depends:	${python:Depends},
+Depends:	${misc:Depends},	
+		${python:Depends},
 		python-awn-extras,
 		python-gtk2,
 		python-gobject,
