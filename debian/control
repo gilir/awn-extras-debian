@@ -24,7 +24,7 @@ Build-Depends: 	debhelper (>= 7),
 		libwebkit-dev,
 		libglade2-dev,
 		libgnomeui-dev
-Standards-Version: 3.8.0
+Standards-Version: 3.8.1
 XS-Python-Version: >= 2.4
 Homepage: https://launchpad.net/awn-extras
 

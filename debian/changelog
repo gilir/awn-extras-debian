@@ -8,6 +8,7 @@ awn-extras-applets (0.3.2.1-2) UNRELEASED; urgency=low
    - Bump debhelper build-depends to (>= 7).
    - Drop build-depends on cdbs.
    - Add missing ${misc:Depends} for python-awnlib.
+   - Bump Standards-Version to 3.8.1.
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Sat, 25 Apr 2009 00:23:09 +0200
 
