@@ -28,7 +28,6 @@ Standards-Version: 3.8.1
 Homepage: https://launchpad.net/awn-extras
 
 Package: awn-applets-c-core
-Section: gnome
 Architecture: any
 Depends: 	${shlibs:Depends}, 
 		${misc:Depends}, 
@@ -57,7 +56,6 @@ Description: A collection of applets for avant-window-navigator
   * trash: A trash applet, like the one from gnome-panel.
 
 Package: awn-applets-c-extras
-Section: gnome
 Architecture: any
 Depends: 	${shlibs:Depends}, 
 		${misc:Depends}, 
@@ -78,7 +76,6 @@ Description: A collection of applets for avant-window-navigator
   * webapplet: Displays a web page.
 
 Package: awn-applets-python-core
-Section: gnome
 Architecture: all
 Depends: 	${shlibs:Depends}, 
 		${misc:Depends}, 
@@ -131,7 +128,6 @@ Description: A collection of applets for avant-window-navigator
     and weather forecast from weather.com.
 
 Package: awn-applets-python-extras
-Section: gnome
 Architecture: all
 Depends: 	${shlibs:Depends}, 
 		${misc:Depends}, 

@@ -12,6 +12,7 @@ awn-extras-applets (0.3.2.1-2) UNRELEASED; urgency=low
    - Following the split of python-gnome2-desktop, replace the recommends 
      by python-rsvg | python-gnome2-desktop.
    - Remove X{B,S}-Python-Version.
+   - Remove useless "section" field.
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Sat, 25 Apr 2009 00:23:09 +0200
 
