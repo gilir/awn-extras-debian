@@ -25,7 +25,6 @@ Build-Depends: 	debhelper (>= 7),
 		libglade2-dev,
 		libgnomeui-dev
 Standards-Version: 3.8.1
-XS-Python-Version: >= 2.4
 Homepage: https://launchpad.net/awn-extras
 
 Package: awn-applets-c-core
@@ -99,7 +98,6 @@ Recommends: 	awn-manager (>= 0.3~bzr489),
 		libgweather-common,
 		gnome-applets
 Suggests:	awn-applets-python-extras
-XB-Python-Version: ${python:Versions}
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
  provides some extensions to the bar and some new features (like 
@@ -148,7 +146,6 @@ Recommends: 	awn-manager (>= 0.3~bzr489),
 Suggests: 	tomboy,
 Conflicts: awn-applets-python-core (<< 0.3~bzr912)
 Replaces: awn-applets-python-core (<< 0.3~bzr912)
-XB-Python-Version: ${python:Versions}
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
  provides some extensions to the bar and some new features (like 
@@ -208,8 +205,7 @@ Depends:	${misc:Depends},
 		${python:Depends},
 		python-awn-extras,
 		python-gtk2,
-		python-gobject,
-XB-Python-Version: ${python:Versions}
+		python-gobject
 Description: Python utilities for avant-window-navigator's applets
  This packages provides AWNLib, a collection of functions to simplify the 
  creation of applets with Python.
