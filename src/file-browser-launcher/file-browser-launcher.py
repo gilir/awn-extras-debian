@@ -34,6 +34,7 @@ import awn
 import gconfwrapper as awnccwrapper
 
 class App (awn.AppletSimple):
+  shared_config = None
   def __init__(self, uid, orient, height):
     self.uid = uid
     
@@ -44,11 +45,12 @@ class App (awn.AppletSimple):
     
     #Has to do with awncc
     self.client = awnccwrapper.AwnCCWrapper(self.uid)
+    self.shared_config = awn.Config('shared', None)
     
     #Get the default icon theme
     self.theme = gtk.icon_theme_get_default()
     
-    self.icon = self.set_awn_icon('file-browser-launcher', 'folder')
+    self.icon = self.set_awn_icon('file-browser-launcher', 'stock_folder')
     
     #Make the dialog, will only be shown when approiate
     #VBox for everything to go in
@@ -90,8 +92,14 @@ class App (awn.AppletSimple):
     self.connect('button-press-event', self.button_press)
     self.connect('enter-notify-event', lambda a,b: self.title.show(self,'File Browser Launcher'))
     self.connect('leave-notify-event', lambda a,b: self.title.hide(self))
-    self.dialog.connect('focus-out-event', lambda a,b: self.dialog.hide())
-  
+    self.dialog.connect('focus-out-event', self.focus_out)
+
+  #Dialog loses focus
+  def focus_out(self, dialog, event):
+    if self.shared_config.get_bool(awn.CONFIG_DEFAULT_GROUP,
+      'dialog_focus_loss_behavior'):
+      dialog.hide()
+
   #Function to show the home folder, mounted drives/partitions, and bookmarks according to awncc
   #This also refreshes in case a CD was inserted, MP3 player unplugged, bookmark added, etc.
   def add_places(self):
