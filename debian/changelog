@@ -14,6 +14,7 @@ awn-extras-applets (0.3.2.2-1) unstable; urgency=low
      by python-rsvg | python-gnome2-desktop.
    - Remove X{B,S}-Python-Version.
    - Remove useless "section" field.
+   - Add VCS fields.
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Wed, 06 May 2009 10:06:02 +0200
 

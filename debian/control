@@ -26,6 +26,8 @@ Build-Depends: 	debhelper (>= 7),
 		libgnomeui-dev
 Standards-Version: 3.8.1
 Homepage: https://launchpad.net/awn-extras
+Vcs-Git: git://github.com/gilir/awn-extras-debian.git
+Vcs-Browser: http://github.com/gilir/awn-extras-debian/tree
 
 Package: awn-applets-c-core
 Architecture: any
