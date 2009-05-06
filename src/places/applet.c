@@ -457,6 +457,11 @@ static void get_places(Places * places)
 {
 
   Menu_Item *item = NULL;
+#if GLIB_CHECK_VERSION(2,14,0)
+  const gchar *desktop_dir = g_get_user_special_dir (G_USER_DIRECTORY_DESKTOP);
+#else
+  const gchar *desktop_dir = g_getenv("XDG_DESKTOP_DIR");
+#endif
 
   item = g_malloc(sizeof(Menu_Item));
   item->text = g_strdup("Home");
@@ -478,14 +483,20 @@ static void get_places(Places * places)
 
   item->text = g_strdup("Desktop");
 
-  if (g_getenv("XDG_DESKTOP_DIR"))
+  if (desktop_dir)
   {
-    places->desktop_dir = g_strdup(g_getenv("XDG_DESKTOP_DIR"));
+    places->desktop_dir = g_strdup(desktop_dir);
   }
   else
   {
-    g_warning("Places: XDG_DESKTOP_DIR is not set... defaulting to \"~/Desktop\"\n");
-    places->desktop_dir = g_strdup(" ~/Desktop");
+    if (g_getenv("HOME") )
+    {
+      places->desktop_dir = g_strdup_printf ("%s/%s",g_getenv("HOME"),"Desktop");
+    }
+    else
+    {
+      places->desktop_dir = g_strdup("Desktop");
+    }
   }
 
   item->icon = g_strdup("desktop");

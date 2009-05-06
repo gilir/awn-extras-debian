@@ -6,7 +6,7 @@ m4_define(pycairo_required_version,      1.0.2) dnl or 1.1.7
 m4_define(pygtk_required_version,        2.10.0)
 
 
-AC_INIT(awn-extras-applets, 0.3.2.1, [])
+AC_INIT(awn-extras-applets, 0.3.2.2, [])
 AM_INIT_AUTOMAKE()
 AC_CONFIG_SRCDIR(src)
 AM_CONFIG_HEADER(config.h)
@@ -252,6 +252,7 @@ AC_DEFINE_UNQUOTED(DBUS_API_SUBJECT_TO_CHANGE, ,DBUS API is subject to change)
 
 appletsdir="$datarootdir/avant-window-navigator/applets"
 
+AS_AC_EXPAND([PYTHON_PLATFORM_PKG], [$PYTHON_PLATFORM_PKG])
 AS_AC_EXPAND(APPLETSDIR, $appletsdir)
 AS_AC_EXPAND(SYSCONFDIR, $sysconfdir)
 AS_AC_EXPAND(LIBDIR, $libdir)

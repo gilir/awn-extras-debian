@@ -417,7 +417,7 @@ class LocationSearchWindow:
 
         def startElement(self, name, attrs):
             if name in self.__names:
-                self.__no_lang = not bool(attrs)
+                self.__no_lang = "xml:lang" not in attrs
                 self.__in_name_tag = self.__no_lang
             elif name == "tz-hint":
                 self.__in_tz_tag = True
