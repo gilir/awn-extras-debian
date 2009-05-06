@@ -1,4 +1,4 @@
-awn-extras-applets (0.3.2.2-1) UNRELEASED; urgency=low
+awn-extras-applets (0.3.2.2-1) unstable; urgency=low
 
   * New Upstream Version (LP: #344874, #350383).
   * debian/rules:
@@ -15,7 +15,7 @@ awn-extras-applets (0.3.2.2-1) UNRELEASED; urgency=low
    - Remove X{B,S}-Python-Version.
    - Remove useless "section" field.
 
- -- Julien Lavergne <julien.lavergne@gmail.com>  Wed, 06 May 2009 10:01:34 +0200
+ -- Julien Lavergne <julien.lavergne@gmail.com>  Wed, 06 May 2009 10:06:02 +0200
 
 awn-extras-applets (0.3.2.1-1) unstable; urgency=low
 
