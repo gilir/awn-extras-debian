@@ -19,6 +19,7 @@ awn-extras-applets (0.3.2.2-1) unstable; urgency=low
    - Bump depends for python-awn to >= 0.3.2.1, to force the depends on the 
      1st version build with python-support.
    - Add build-depends on quilt.
+  * debian/patches: Convert to use quilt.
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Wed, 06 May 2009 10:06:02 +0200
 

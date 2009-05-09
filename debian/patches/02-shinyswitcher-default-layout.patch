@@ -1,6 +1,9 @@
-=== modified file 'src/shiny-switcher/shinyswitcher.schema-ini'
---- src/shiny-switcher/shinyswitcher.schema-ini	2008-06-06 16:22:54 +0000
-+++ src/shiny-switcher/shinyswitcher.schema-ini	2009-03-20 13:29:41 +0000
+#Set the layout to 4x1 workspaces by default, and applet's size to 80% of the bar.
+
+Index: awn-extras-applets/src/shiny-switcher/shinyswitcher.schema-ini
+===================================================================
+--- awn-extras-applets.orig/src/shiny-switcher/shinyswitcher.schema-ini	2008-06-06 16:22:54 +0000
++++ awn-extras-applets/src/shiny-switcher/shinyswitcher.schema-ini	2009-03-20 13:29:41 +0000
 @@ -1,11 +1,11 @@
  [DEFAULT/rows]
  type = int
