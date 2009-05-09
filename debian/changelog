@@ -3,6 +3,7 @@ awn-extras-applets (0.3.2.2-1) unstable; urgency=low
   * New Upstream Version (LP: #344874, #350383).
   * debian/rules:
    - Rewrite to use python-support and debhelper v7.
+   - Add quilt support.
   * debian/compat:
    - Bump to 7.
   * debian/control:
@@ -17,6 +18,7 @@ awn-extras-applets (0.3.2.2-1) unstable; urgency=low
    - Add VCS fields.
    - Bump depends for python-awn to >= 0.3.2.1, to force the depends on the 
      1st version build with python-support.
+   - Add build-depends on quilt.
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Wed, 06 May 2009 10:06:02 +0200
 
