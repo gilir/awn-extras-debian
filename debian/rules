@@ -2,9 +2,6 @@
 
 #DH_VERBOSE=1
 
-#Need debhelper 7.2.6
-#DEB_BUILD_OPTIONS=nocheck
-
 configure_flags += \
 		--disable-pymod-checks \
 		--with-webkit
@@ -39,34 +36,19 @@ binary-indep: install
 binary: binary-arch binary-indep
 
 
-#DEB_DH_INSTALL_SOURCEDIR=debian/tmp
+#Need debhelper 7.2.6 and quilt 0.46-7
+#DEB_BUILD_OPTIONS=nocheck
 
-#include /usr/share/cdbs/1/rules/debhelper.mk
-#include /usr/share/cdbs/1/class/gnome.mk
-#include /usr/share/cdbs/1/rules/simple-patchsys.mk
-
-#DEB_CONFIGURE_EXTRA_FLAGS += 	--disable-pymod-checks \
-#				--with-webkit
-
-#DEB_DH_MAKESHLIBS_ARGS_libawn-extras0 += -V"libawn-extras0 (>= 0.3.2)"
-
-#DEB_SHLIBDEPS_LIBRARY_awn-applets-c-core:= libawn-extras0
-#DEB_SHLIBDEPS_INCLUDE_awn-applets-c-core:= debian/libawn-extras0/usr/
-
-#DEB_SHLIBDEPS_LIBRARY_awn-applets-c-extras:= libawn-extras0
-#DEB_SHLIBDEPS_INCLUDE_awn-applets-c-extras:= debian/libawn-extras0/usr/
-
-#binary-install/python-libawn-extras::
-#	dh_pycentral -ppython-libawn-extras
-
-#binary-install/python-awnlib::
-#	dh_pycentral -ppython-awnlib
-
-#binary-install/awn-applets-python-core::
-#	dh_pycentral -pawn-applets-python-core
-
-#binary-install/awn-applets-python-extras::
-#	dh_pycentral -pawn-applets-python-extras
-
-#binary-install/python-awn-extras::
-#	dh_pycentral -ppython-awn-extras
+#configure_flags += \
+#		--disable-pymod-checks \
+#		--with-webkit
+#
+#%:
+#	dh --with quilt $@
+#
+#override_dh_auto_configure:
+#	dh_auto_configure -- 	$(configure_flags)
+#
+#override_dh_makeshlibs:
+#	dh_makeshlibs -a -n --exclude=*
+#	dh_makeshlibs -plibawn-extras0  -V"libawn-extras0 (>= 0.3.2)"
