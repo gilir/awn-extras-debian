@@ -9,7 +9,7 @@ configure_flags += \
 		--with-webkit
 
 build: build-stamp
-build-stamp: patch
+build-stamp: $(QUILT_STAMPFN)
 	dh_testdir
 	dh_auto_configure -- 	$(configure_flags)
 	dh_auto_build
