@@ -36,21 +36,3 @@ binary-indep: install
 	dh binary-indep
 
 binary: binary-arch binary-indep
-
-
-#Need debhelper 7.2.6 and quilt 0.46-7
-#DEB_BUILD_OPTIONS=nocheck
-
-#configure_flags += \
-#		--disable-pymod-checks \
-#		--with-webkit
-#
-#%:
-#	dh --with quilt $@
-#
-#override_dh_auto_configure:
-#	dh_auto_configure -- 	$(configure_flags)
-#
-#override_dh_makeshlibs:
-#	dh_makeshlibs -a -n --exclude=*
-#	dh_makeshlibs -plibawn-extras0  -V"libawn-extras0 (>= 0.3.2)"
