@@ -13,15 +13,16 @@ awn-extras-applets (0.3.2.2-1) unstable; urgency=low
    - Bump Standards-Version to 3.8.1.
    - Following the split of python-gnome2-desktop, replace the recommends 
      by python-rsvg | python-gnome2-desktop.
-   - Remove X{B,S}-Python-Version.
    - Remove useless "section" field.
    - Add VCS fields.
    - Bump depends for python-awn to >= 0.3.2.1, to force the depends on the 
      1st version build with python-support.
    - Add build-depends on quilt.
+   - Remove XB-Python-Version.
   * debian/patches: Convert to use quilt.
   * debian/preinst:
    - add preinst maintainer script to clean after pycentral. 
+  * Add debian/pyversions and remove debian/pycompat
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Wed, 06 May 2009 10:06:02 +0200
 
