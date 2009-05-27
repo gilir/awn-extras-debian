@@ -20,8 +20,8 @@ awn-extras-applets (0.3.2.2-1) unstable; urgency=low
    - Add build-depends on quilt.
    - Remove X{B,S}-Python-Version.
   * debian/patches: Convert to use quilt.
-  * debian/preinst:
-   - add *.preinst maintainer scripts to clean after pycentral. 
+  * debian/python-awnlib.preinst:
+   - add maintainer scripts to clean after pycentral. 
   * Add debian/pyversions and remove debian/pycompat
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Wed, 06 May 2009 10:06:02 +0200
