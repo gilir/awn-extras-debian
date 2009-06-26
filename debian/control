@@ -86,7 +86,7 @@ Depends: 	${shlibs:Depends},
 		${python:Depends},
 		avant-window-navigator,
 		python-awn (>= 0.3.2.1),
-		python-awnlib (>= 0.3.2)
+		python-awnlib (>= 0.3.2.2)
 Recommends: 	awn-manager (>= 0.3~bzr489),
 		python-alsaaudio,
 		python-feedparser,
@@ -138,7 +138,7 @@ Depends: 	${shlibs:Depends},
 		${python:Depends},
 		avant-window-navigator,
 		python-awn (>= 0.3.2.1),
-		python-awnlib (>= 0.3.2),
+		python-awnlib (>= 0.3.2.2)
 		fortune
 Recommends: 	awn-manager (>= 0.3~bzr489),
 		python-rsvg | python-gnome2-desktop,
@@ -203,7 +203,7 @@ Section: python
 Architecture: any
 Depends:	${misc:Depends},	
 		${python:Depends},
-		python-awn-extras,
+		python-awn-extras (>= 0.3.2.2),
 		python-gtk2,
 		python-gobject
 Description: Python utilities for avant-window-navigator's applets
