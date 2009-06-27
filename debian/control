@@ -39,7 +39,7 @@ Depends: 	${shlibs:Depends},
 Recommends: 	awn-manager (>= 0.3~bzr489),
 		gconf-editor,
 		awn-applets-python-core,
-		xdg-utils,
+		xdg-utils
 Suggests:	awn-applets-c-extras,
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
@@ -63,8 +63,8 @@ Package: awn-applets-c-extras
 Architecture: any
 Depends: 	${shlibs:Depends}, 
 		${misc:Depends}, 
-		avant-window-navigator,
-Recommends: awn-manager (>= 0.3~bzr489),
+		avant-window-navigator
+Recommends: awn-manager (>= 0.3~bzr489)
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
  provides some extensions to the bar and some new features (like 
@@ -138,12 +138,12 @@ Depends: 	${shlibs:Depends},
 		${python:Depends},
 		avant-window-navigator,
 		python-awn (>= 0.3.2.1),
-		python-awnlib (>= 0.3.2.2)
+		python-awnlib (>= 0.3.2.2),
 		fortune
 Recommends: 	awn-manager (>= 0.3~bzr489),
 		python-rsvg | python-gnome2-desktop,
-		python-xlib,
-Suggests: 	tomboy,
+		python-xlib
+Suggests: 	tomboy
 Conflicts: awn-applets-python-core (<< 0.3~bzr912)
 Replaces: awn-applets-python-core (<< 0.3~bzr912)
 Description: A collection of applets for avant-window-navigator
@@ -180,7 +180,7 @@ Depends:	libawn-extras0 (= ${binary:Version}),
 		${misc:Depends},
 		libawn-dev,
 		libgtk2.0-dev,
-		libglib2.0-dev,
+		libglib2.0-dev
 Description: library for avant-window-navigator's applets - development files
  This package provides the include files and static library for the
  libawn-extras library functions.

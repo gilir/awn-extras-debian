@@ -6,6 +6,7 @@ awn-extras-applets (0.3.2.2-2) unstable; urgency=low
      upgrade.
      Closes: #534665, #534666
    - Bump Standards-Version to 3.8.2 (no change needed).
+   - Fix comma in depends field.  
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Sat, 27 Jun 2009 14:06:25 +0200
 
