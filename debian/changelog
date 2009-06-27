@@ -1,13 +1,13 @@
-awn-extras-applets (0.3.2.2-2) UNRELEASED; urgency=low
+awn-extras-applets (0.3.2.2-2) unstable; urgency=low
 
   * debian/control:
    - Depends on python-awnlib (>= 0.3.2.2) and python-awn-extras (>= 0.3.2.2),
      first version build with python-support, to avoid breakage on partial
      upgrade.
      Closes: #534665, #534666
-   - Bimp Standards-Version tp 3.8.2 (no change needed).
+   - Bump Standards-Version to 3.8.2 (no change needed).
 
- -- Julien Lavergne <julien.lavergne@gmail.com>  Fri, 26 Jun 2009 23:57:29 +0200
+ -- Julien Lavergne <julien.lavergne@gmail.com>  Sat, 27 Jun 2009 14:06:25 +0200
 
 awn-extras-applets (0.3.2.2-1) unstable; urgency=low
 
