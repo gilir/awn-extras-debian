@@ -25,7 +25,7 @@ Build-Depends: 	debhelper (>= 7),
 		libwebkit-dev,
 		libglade2-dev,
 		libgnomeui-dev
-Standards-Version: 3.8.1
+Standards-Version: 3.8.2
 Homepage: https://launchpad.net/awn-extras
 Vcs-Git: git://github.com/gilir/awn-extras-debian.git
 Vcs-Browser: http://github.com/gilir/awn-extras-debian/tree
