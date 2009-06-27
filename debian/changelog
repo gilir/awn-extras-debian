@@ -4,6 +4,7 @@ awn-extras-applets (0.3.2.2-2) UNRELEASED; urgency=low
    - Depends on python-awnlib (>= 0.3.2.2) and python-awn-extras (>= 0.3.2.2),
      first version build with python-support, to avoid breakage on partial 
      upgrade.
+     Closes: #534665, #534666
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Fri, 26 Jun 2009 23:57:29 +0200
 
