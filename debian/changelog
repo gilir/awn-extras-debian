@@ -5,6 +5,7 @@ awn-extras-applets (0.3.2.2-2ubuntu1) UNRELEASED; urgency=low
      by cairo-clock (Closes: #550280)
    - Build-depends on python-dev (>= 2.5) and remove build-depends on
      python-elementtree, it's now included in python (Closes: #569388)
+   - Fix typo in description (Closes: #557833, #557834)
 
  -- Julien Lavergne <gilir@ubuntu.com>  Thu, 11 Feb 2010 23:32:58 +0100
 

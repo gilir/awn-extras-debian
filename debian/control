@@ -194,8 +194,8 @@ Depends:	libawn-extras0 (= ${binary:Version}),
 		${python:Depends}
 Provides: ${python:Provides}
 Description: Python bindings for avant-window-navigator's applets
- This packages provides Python bindings to create and use Python applets with
- functions of libawn-extras. It also include AWNLib, a collection of
+ This package provides Python bindings to create and use Python applets with
+ functions of libawn-extras. It also includes AWNLib, a collection of
  functions to simplify the creation of applets with Python.
 
 Package: python-awnlib
@@ -207,5 +207,5 @@ Depends:	${misc:Depends},
 		python-gtk2,
 		python-gobject
 Description: Python utilities for avant-window-navigator's applets
- This packages provides AWNLib, a collection of functions to simplify the 
+ This package provides AWNLib, a collection of functions to simplify the 
  creation of applets with Python.
