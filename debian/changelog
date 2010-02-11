@@ -6,6 +6,7 @@ awn-extras-applets (0.3.2.2-3) UNRELEASED; urgency=medium
    - Build-depends on python-dev (>= 2.5) and remove build-depends on
      python-elementtree, it's now included in python (Closes: #569388)
    - Fix typo in description (Closes: #557833, #557834)
+   - Bump Standards-Version to 3.8.4, no change needed.
   * Switch to dpkg-source 3.0 (quilt) format
    - Drop usage of quilt in debian/rules.
    - Drop build-depends on quilt.
