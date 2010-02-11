@@ -3,6 +3,8 @@ awn-extras-applets (0.3.2.2-2ubuntu1) UNRELEASED; urgency=low
   *  debian/control:
    - Add python-rsvg | python-gnome2-desktop depends for core applets, needed
      by cairo-clock (Closes: #550280)
+   - Build-depends on python-dev (>= 2.5) and remove build-depends on
+     python-elementtree, it's now included in python (Closes: #569388)
 
  -- Julien Lavergne <gilir@ubuntu.com>  Thu, 11 Feb 2010 23:32:58 +0100
 
