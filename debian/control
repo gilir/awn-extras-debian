@@ -97,7 +97,8 @@ Recommends: 	awn-manager (>= 0.3~bzr489),
 		sqlite3,
 		python-dateutil,
 		libgweather-common,
-		gnome-applets
+		gnome-applets,
+		python-rsvg | python-gnome2-desktop
 Suggests:	awn-applets-python-extras
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
