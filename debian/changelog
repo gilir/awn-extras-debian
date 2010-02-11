@@ -1,3 +1,9 @@
+awn-extras-applets (0.3.2.2-3ubuntu1) UNRELEASED; urgency=low
+
+  * Switch to dpkg-source 3.0 (quilt) format
+
+ -- Julien Lavergne <gilir@ubuntu.com>  Thu, 11 Feb 2010 23:47:32 +0100
+
 awn-extras-applets (0.3.2.2-3) unstable; urgency=medium
 
   *  debian/control:
