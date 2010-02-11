@@ -2,20 +2,18 @@
 
 #DH_VERBOSE=1
 
-include /usr/share/quilt/quilt.make
-
 configure_flags += \
 		--disable-pymod-checks \
 		--with-webkit
 
 build: build-stamp
-build-stamp: $(QUILT_STAMPFN)
+build-stamp:
 	dh_testdir
 	dh_auto_configure -- 	$(configure_flags)
 	dh_auto_build
 	touch build-stamp
 
-clean: unpatch
+clean:
 	dh clean
 
 install: build install-stamp
