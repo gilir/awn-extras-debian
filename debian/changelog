@@ -1,10 +1,4 @@
-awn-extras-applets (0.3.2.2-3ubuntu1) UNRELEASED; urgency=low
-
-  * Switch to dpkg-source 3.0 (quilt) format
-
- -- Julien Lavergne <gilir@ubuntu.com>  Thu, 11 Feb 2010 23:47:32 +0100
-
-awn-extras-applets (0.3.2.2-3) unstable; urgency=medium
+awn-extras-applets (0.3.2.2-3) UNRELEASED; urgency=medium
 
   *  debian/control:
    - Add python-rsvg | python-gnome2-desktop depends for core applets, needed
@@ -12,6 +6,7 @@ awn-extras-applets (0.3.2.2-3) unstable; urgency=medium
    - Build-depends on python-dev (>= 2.5) and remove build-depends on
      python-elementtree, it's now included in python (Closes: #569388)
    - Fix typo in description (Closes: #557833, #557834)
+  * Switch to dpkg-source 3.0 (quilt) format
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Thu, 11 Feb 2010 23:32:58 +0100
 
