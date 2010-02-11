@@ -1,4 +1,4 @@
-awn-extras-applets (0.3.2.2-3) UNRELEASED; urgency=medium
+awn-extras-applets (0.3.2.2-3) unstable; urgency=medium
 
   *  debian/control:
    - Add python-rsvg | python-gnome2-desktop depends for core applets, needed
