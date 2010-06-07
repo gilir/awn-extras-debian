@@ -1,6 +1,15 @@
 awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
 
   * New upstream release.
+   - Catch error in weather applet (LP: #359668)
+   - Stack applet close on click (LP: #261520)
+   - Close cairo-menu after a click (LP: #511256)
+   - Fix crash of awn-system-monitor (LP: #545164)
+   - Fix crash when removing a volume >1 or adding volume >1 or using prefs
+     while > 1 volumes is present (LP: #556175)
+   - Fix crash of media-control when Rhythmbox quit (LP: #558463)
+   - Fix crash of file-browser-launcher when there is no .gtk-bookmarks
+     (LP: #551119)
   * debian/watch: Update to the new package naming/ 
 
  -- Julien Lavergne <gilir@ubuntu.com>  Tue, 08 Jun 2010 01:00:15 +0200
