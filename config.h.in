@@ -36,6 +36,12 @@
 /* Defined if Gstreamer is detected */
 #undef HAVE_GSTREAMER
 
+/* Defined if GTK+ has support for icons in GtkEntrys */
+#undef HAVE_GTK_ICON_ENTRY
+
+/* Defined if GTK+ has support for hyperlinks in GtkLabels */
+#undef HAVE_GTK_URL_LABEL
+
 /* Define to 1 if you have the <inttypes.h> header file. */
 #undef HAVE_INTTYPES_H
 
@@ -45,14 +51,14 @@
 /* Define to 1 if you have the `m' library (-lm). */
 #undef HAVE_LIBM
 
-/* Have libwnck 2.22.x */
-#undef HAVE_LIBWNCK_222
-
 /* Define to 1 if you have the <locale.h> header file. */
 #undef HAVE_LOCALE_H
 
 /* Define to 1 if you have the <memory.h> header file. */
 #undef HAVE_MEMORY_H
+
+/* Define if Mozilla/Gecko/XULRunner is available. */
+#undef HAVE_MOZILLA
 
 /* Define if the installed WebKit uses the old pkgconfig file and header
    structure. */
@@ -79,6 +85,16 @@
 /* Define to 1 if you have the <unistd.h> header file. */
 #undef HAVE_UNISTD_H
 
+/* Define if WebKit is available. */
+#undef HAVE_WEBKIT
+
+/* Locale directory */
+#undef LOCALEDIR
+
+/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
+#undef LT_OBJDIR
+
 /* Name of package */
 #undef PACKAGE
 
@@ -93,6 +109,9 @@
 
 /* Define to the one symbol short name of this package. */
 #undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
 
 /* Define to the version of this package. */
 #undef PACKAGE_VERSION

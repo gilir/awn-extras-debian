@@ -1,23 +1,42 @@
-SUBDIRS =				\
-	src						\
-	po
+NULL =
+SUBDIRS = \
+	applets \
+	shared/python \
+	shared/vala \
+	po \
+	$(NULL)
 	
-EXTRA_DIST =				\
-	intltool-extract.in		\
-	intltool-merge.in		\
-	intltool-update.in		\
-	po/Makefile.in.in \
-	po/POTFILES.skip \
-	autogen.sh
+EXTRA_DIST = \
+	autogen.sh \
+	COPYING \
+	COPYING.BSD \
+	COPYING.CCASAv3.0 \
+	COPYING.GPL-3 \
+	COPYING.LGPL-2.1 \
+	intltool-extract.in \
+	intltool-merge.in \
+	intltool-update.in \
+	shared/vala/build.vapi \
+	shared/vala/libintl.vapi \
+	$(NULL)
 
-DISTCLEANFILES =			\
-	intltool-extract		\
-	intltool-merge			\
-	intltool-update
+DISTCLEANFILES = \
+        doltcompile \
+        doltlibtool \
+        intltool-extract \
+        intltool-merge \
+        intltool-update \
+        $(NULL)
 
 ACLOCAL_AMFLAGS = -I m4
-AUTOMAKE_OPTIONS = foreign
+
 DISTCHECK_CONFIGURE_FLAGS = --disable-pymod-checks
+
+i18n-update: po/POTFILES.in po/POTFILES.skip
+	(cd po && for lang in `grep ALL_LINGUAS ../configure.ac | cut -d'"' -f2`; do \
+		echo -n "Updating $$lang:"; \
+		intltool-update $$lang; \
+	done)
 
 gtk_update_icon_cache = gtk-update-icon-cache -f -t ${datadir}/icons/hicolor
 
