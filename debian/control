@@ -36,6 +36,8 @@ Recommends: 	awn-settings (>= 0.3~bzr489),
 		xdg-utils
 Suggests:	awn-applets-c-extras,
 			gconf-editor,
+# notification-area
+			python-gconf,
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
  provides some extensions to the bar and some new features (like 
@@ -136,7 +138,9 @@ Depends: 	${shlibs:Depends},
 Recommends: 	awn-settings (>= 0.3~bzr489),
 		python-rsvg | python-gnome2-desktop,
 		python-xlib
-Suggests: 	tomboy
+Suggests: 	tomboy,
+#YAMA
+			alacarte,
 Conflicts: awn-applets-python-core (<< 0.3~bzr912)
 Replaces: awn-applets-python-core (<< 0.3~bzr912)
 Description: A collection of applets for avant-window-navigator

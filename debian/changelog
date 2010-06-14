@@ -38,6 +38,7 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - Slickswitcher applet added.
   * debian/control:
    - Description updated with new applets.
+   - Update Depends, Recommends and Suggests for all applets and add comments.
    - Add recommends on python-rsvg and python-wnck on python-core rather
      than python-extras applets Thanks Mark Lee for the patch (LP: #423598).
    - Bump debhelper build-depends to (>= 7.0.50~) for overrides.
