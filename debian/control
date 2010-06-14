@@ -70,12 +70,10 @@ Description: A collection of applets for avant-window-navigator
  applets in the gnome-panel).
  .
  This package contains extras applets written in C:
-  * filebrowser: Displays the contents of a directory and allows you to 
-    navigate folders.
+  * digitalClock: A digital clock and calendar applet.
   * main-menu: Display a list of all the applications on your computer.
   * places: Displays shortcuts in buttons.
-  * trasher: Like the trash applet, but uses stacks to allow you to preview 
-    your trash.
+  * sysmon: Display CPU activity and system stats on click.
   * webapplet: Displays a web page.
 
 Package: awn-applets-python-core

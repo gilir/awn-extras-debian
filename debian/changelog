@@ -16,6 +16,11 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - Separator applet move to Awn package.
    - Trash applet replace by Garbage applet.
    - Show desktop applet rewrited and added.
+  * debian/awn-applets-extras-applets.install
+   - Filebrowser applet removed.
+   - Digital Clock applet rewritten and added.
+   - Trasher applet removed.
+   - Sysmon applet added.
   * debian/control:
    - Description updated with new applets.
    - Add recommends on python-rsvg and python-wnck on python-core rather
