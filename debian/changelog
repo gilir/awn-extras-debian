@@ -41,11 +41,14 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - Add recommends on python-rsvg and python-wnck on python-core rather
      than python-extras applets Thanks Mark Lee for the patch (LP: #423598).
    - Bump debhelper build-depends to (>= 7.0.50~) for overrides.
+   - Remove libawn-extras and python-awnlib, all merged in python-awn-extras.
   * debian/rules
    - Rewrite to use overrides and dh_install --fail-missing.
    - Disable dropper (not finished), mimenu (unstable) vala-test python-test 
      wobblyzini (only for development purpose) applets.
   * debian/awn-applets-c-core.links: dropped, not needed.
+  * debian/libawn-extras*: Removed, libawn-extras was removed upstream.
+  * debian/python-awnlib*: Merged with python-awn-extras.
 
  -- Julien Lavergne <gilir@ubuntu.com>  Tue, 08 Jun 2010 01:00:15 +0200
 
