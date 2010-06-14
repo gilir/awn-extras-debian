@@ -114,6 +114,13 @@ usr/share/avant-window-navigator/applets/mount/icons/*.png
 usr/share/avant-window-navigator/applets/mount.desktop
 usr/share/avant-window-navigator/schemas/awn-applet-mount.schema-ini
 #
+# Stack
+#
+etc/gconf/schemas/awn-applet-stacks.schemas
+usr/share/avant-window-navigator/applets/stacks/
+usr/share/avant-window-navigator/applets/stacks.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-stacks.schema-ini
+#
 # Quit
 #
 etc/gconf/schemas/awn-applet-quit.schemas

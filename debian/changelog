@@ -28,6 +28,14 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - DesktopManager applet removed.
    - Lastfm applet removed.
    - Hardware sensors added.
+  * debian/awn-applets-python-extras.install:
+   - Meebo applet removed.
+   - Digg applet removed.
+   - Mimenu applet desactived.
+   - Pynot applet removed. 
+   - RTM applet removed.
+   - YAMA applet added.
+   - Slickswitcher applet added.
   * debian/control:
    - Description updated with new applets.
    - Add recommends on python-rsvg and python-wnck on python-core rather
