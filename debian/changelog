@@ -11,7 +11,13 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - Fix crash of file-browser-launcher when there is no .gtk-bookmarks
      (LP: #551119)
   * debian/watch: Update to the new package naming.
+  * debian/awn-applets-c-core.applets:
+   - Plugger applet removed.
+   - Separator applet move to Awn package.
+   - Trash applet replace by Garbage applet.
+   - Show desktop applet rewrited and added.
   * debian/control:
+   - Description updated with new applets.
    - Add recommends on python-rsvg and python-wnck on python-core rather
      than python-extras applets Thanks Mark Lee for the patch (LP: #423598).
    - Bump debhelper build-depends to (>= 7.0.50~) for overrides.

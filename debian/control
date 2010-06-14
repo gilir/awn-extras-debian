@@ -53,9 +53,10 @@ Description: A collection of applets for avant-window-navigator
   * notification-area : Replaces the gnome-panel notification area and shows
     it right on your dock 
   * plugger: Displays mounted volumes and allows you to browse them.
-  * separator: Display a white line to separate applets.
   * shinyswitcher: A workspace switcher supporting compiz and other WMs.
-  * trash: A trash applet, like the one from gnome-panel.
+  * showdesktop: Hides/shows all of the windows of the current viewport, 
+    similar to the showdesktop icon of gnome-panel.
+  * garbage: A trash applet, like the one from gnome-panel.
 
 Package: awn-applets-c-extras
 Architecture: any
