@@ -18,7 +18,7 @@ Build-Depends: 	debhelper (>= 7.0.50~),
 		python-dev (>= 2.5),
 		python-gtk2-dev,
 		python-cairo-dev,
-		awn-manager (>= 0.2.6),
+		awn-settings (>= 0.2.6),
 		valac (>= 0.5.4),
 		libwebkit-dev,
 		libglade2-dev,
@@ -34,7 +34,7 @@ Architecture: any
 Depends: 	${shlibs:Depends}, 
 		${misc:Depends}, 
 		avant-window-navigator,
-Recommends: 	awn-manager (>= 0.3~bzr489),
+Recommends: 	awn-settings (>= 0.3~bzr489),
 		gconf-editor,
 		awn-applets-python-core,
 		xdg-utils
@@ -63,7 +63,7 @@ Architecture: any
 Depends: 	${shlibs:Depends}, 
 		${misc:Depends}, 
 		avant-window-navigator
-Recommends: awn-manager (>= 0.3~bzr489)
+Recommends: awn-settings (>= 0.3~bzr489)
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
  provides some extensions to the bar and some new features (like 
@@ -84,7 +84,7 @@ Depends: 	${shlibs:Depends},
 		avant-window-navigator,
 		python-awn (>= 0.3.2.1),
 		python-awnlib (>= 0.3.2.2)
-Recommends: 	awn-manager (>= 0.3~bzr489),
+Recommends: 	awn-settings (>= 0.3~bzr489),
 		python-alsaaudio,
 		python-feedparser,
 		python-gst0.10,
@@ -136,7 +136,7 @@ Depends: 	${shlibs:Depends},
 		avant-window-navigator,
 		python-awn (>= 0.3.2.1),
 		fortune
-Recommends: 	awn-manager (>= 0.3~bzr489),
+Recommends: 	awn-settings (>= 0.3~bzr489),
 		python-rsvg | python-gnome2-desktop,
 		python-xlib
 Suggests: 	tomboy
