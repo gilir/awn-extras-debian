@@ -29,7 +29,8 @@ Vcs-Browser: http://github.com/gilir/awn-extras-debian/tree
 Package: awn-applets-c-core
 Architecture: any
 Depends: 	${shlibs:Depends}, 
-		${misc:Depends}, 
+		${misc:Depends},
+		awn-applets-common,
 		avant-window-navigator,
 Recommends: 	awn-settings (>= 0.3~bzr489),
 		awn-applets-python-core,
@@ -60,7 +61,8 @@ Description: A collection of applets for avant-window-navigator
 Package: awn-applets-c-extras
 Architecture: any
 Depends: 	${shlibs:Depends}, 
-		${misc:Depends}, 
+		${misc:Depends},
+		awn-applets-common,
 		avant-window-navigator
 Recommends: awn-settings (>= 0.3~bzr489)
 Description: A collection of applets for avant-window-navigator
@@ -80,6 +82,7 @@ Architecture: all
 Depends: 	${shlibs:Depends}, 
 		${misc:Depends}, 
 		${python:Depends},
+		awn-applets-common,
 		avant-window-navigator,
 		python-awn (>= 0.3.2.1),
 		python-awnlib (>= 0.3.2.2)
@@ -132,6 +135,7 @@ Architecture: all
 Depends: 	${shlibs:Depends}, 
 		${misc:Depends}, 
 		${python:Depends},
+		awn-applets-common,
 		avant-window-navigator,
 		python-awn (>= 0.3.2.1),
 		fortune
@@ -168,3 +172,28 @@ Description: Python bindings for avant-window-navigator's applets
  This package provides Python bindings to create and use Python applets with
  functions of libawn-extras. It also includes AWNLib, a collection of
  functions to simplify the creation of applets with Python.
+
+Package: awn-applets-c-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: 	${shlibs:Depends}, 
+		${misc:Depends}, 
+		awn-applets-c-extras (= ${binary:Version})
+Description: A collection of applets for avant-window-navigator - debug symbols
+ Awn-extras-applets is a collection of applets for avant-window-navigator. It
+ provides some extensions to the bar and some new features (like 
+ applets in the gnome-panel).
+ .
+ This package contains the debugging symbols.
+
+Package: awn-applets-common
+Architecture: any
+Depends: 	${shlibs:Depends}, 
+		${misc:Depends},
+Description: A collection of applets for avant-window-navigator - debug symbols
+ Awn-extras-applets is a collection of applets for avant-window-navigator. It
+ provides some extensions to the bar and some new features (like 
+ applets in the gnome-panel).
+ .
+ This package contains common files like translations.

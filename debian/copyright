@@ -17,95 +17,76 @@ Upstream Authors:
     Rodney Cryderman <rcryderman@gmail.com>
 
 Copyright:
-   Copyright Â© 2007 Neil Jagdish Patel
-   Copyright Â© 2006 Christian Hammond <chipx86@chipx86.com>
-   Copyright Â© 2005 John (J5) Palmieri <johnp@redhat.com>
-   Copyright Â© 2007 Mike (mosburger) Desjardins <desjardinsmike@gmail.com>
-   Copyright Â© 2007, 2008 Rodney Cryderman <rcryderman@gmail.com>
-   Copyright Â© 2004, 2005 Jody Goldberg (jody@gnome.org)
-   Copyright Â© 2007 Randal Barlow
-   Copyright Â© 2007 Timon David Ter Braak
-   Copyright Â© 2002 Anders Carlsson <andersca@gnu.org>
-   Copyright Â© 2006 Mehdi Abaakouk
-   Copyright Â© 2004  Michiel Sikkes <michiel@eyesopened.nl>,
-   Copyright Â© 2004  Emmanuele Bassi <ebassi@gmail.com>
-   Copyright Â© 1999, 2000, 2001 Eazel, Inc.
-   Copyright Â© 2004 Canonical Ltd.
-   Copyright Â© 2002 Sun Microsystems Inc.
-   Copyright Â© 1997-2002 Alfredo K. Kojima
-   Copyright Â© 2007 Richard "nazrat" Beyer
-   Copyright Â© 2007 Jeff "Jawbreaker" Hubbard
-   Copyright Â© 2007 Nicolas de BONFILS
-   Copyright Â© 2006 Christian Hammond <chipx86@chipx86.com>
-   Copyright Â© 2007 Aantn
-   Copyright Â© 2006 Google Inc.
-   Copyright Â© 2008 sharkbaitbobby <sharkbaitbobby+awn@gmail.com>
-   Copyright Â© 2007 Tomas Kramar (kramar.tomas@gmail.com), 
-                 Jonathan Rauprich (joni@noplu.de)
-   Copyright Â© 2004, 2005 Jody Goldberg (jody@gnome.org)
-   Copyright Â© 2001-2002 Open Source Telecom Corporation.
-   Copyright Â© 2007, 2008 Mark Lee <avant-wn@lazymalevolence.com>
-   Copyright 2007 Pavel Panchekha <pavpanchekha@gmail.com>
-   Copyright Â© 2007, 2008 Arvind Ganga
-   Copyright 2007 Isaac J. 
-   Copyright Â© 2002  Red Hat, Inc.
-   Copyright Â© 2004 James M. Cape <jcape@ignore-your.tv>
-   Copyright Â© 2007 John Stowers <john.stower@gmail.com>
-   Copyright Â© 2008 Moses PalmÃ©r
-   Copyright Â© 2008  onox <denkpadje@gmail.com>
-   Copyright 2008 Allan Wirth <allanlw@gmail.com>
-   Copyright Â© 2008 Michal Hruby <michal.mhr at gmail.com>
-   Copyright 2007, 2008 Ryan Rushton (ryancr) <ryan@rrdesign.ca>
-   Copyright Â© 2008 Nathan Howard (triggerhapp@googlemail.com)
-         2003-2005 Jon Gelo      (ziljian@users.sourceforge.net)
-   Copyright Â© 2008 Andrew Starr-Bochicchio (andrewsomething) <a.starr.b@gmail.com>
-   Copyright 2008 Julien Lavergne <julien.lavergne@gmail.com>
+    Copyright (c) 2007 Mike (mosburger) Desjardins
+    Copyright 2007-2009 Rodney Cryderman <rcryderman@gmail.com>
+    Copyright (C) 2008-2010  onox <denkpadje@gmail.com>
+    Copyright (c) 2008-2009 Moses Palmér
+    Copyright (c) 2007-2009 Mark Lee <avant-wn@lazymalevolence.com>
+    Copyright (c) 2008-2010 Sharkbaitbobby <sharkbaitbobby+awn@gmail.com>
+    Copyright (c) 2008-2009  Michal Hruby <michal.mhr AT gmail.com>
+    Copyright 2008-2009 Grega Podlesek <grega.podlesek@gmail.com>
+    Copyright (C) 2008 Zdravko Podlesek
+    Copyright (C) 2007 Ryan Rushton  ryan@rrdesign.ca
+    Copyright (C) 2002-2008  Red Hat, Inc.; 
+    Copyright 1998, 2001 Tim Janik
+    Copyright (C) 2004-2007  Alex Graveley
+    Copyright (c) 2007 - 2008  Randal Barlow <im.tehk at gmail.com>
+    Copyright (c) 2008  Arvind Ganga
+    Copyright (C) 2009, Lachlan Turner (Denham2010) <lochjt@hotmail.com>
+    Copyright (C) 2004 Alexander Iliev &lt;sasoiliev@mamul.org&gt;
+    Copyright (C) 2007 Jim Ramsay <i.am@jimramsay.com>
+    Copyright (C) 2006 Christian Hammond <chipx86@chipx86.com>
+    Copyright (C) 2005 John (J5) Palmieri <johnp@redhat.com>
+    Copyright (C) 2007-2008  Pavel Panchekha <pavpanchekha@gmail.com>
+    Copyright (C) 2008 - 2009  Julien Lavergne <julien.lavergne@gmail.com>
+    Copyright (c) 2007 Nicolas de BONFILS
+    Copyright (C) 2002 Anders Carlsson <andersca@gnu.org>
+    Copyright (C) 2003-2006 Vincent Untz
+    Copyright (C) 2007 Anthony Arobone <aarobone@gmail.com>
+    Copyright (C) 2004, 2005 Jody Goldberg (jody@gnome.org)
+    Copyright (c) 2007 Neil Jagdish Patel
+    Copyright (c) 2007 Timon ter Braak
+    Copyright (c) 2007 SilentStorm aka Wim Wauters
+    Copyright (C) 2009  Danielle Madeley <danielle@madeley.id.au>
 
 The Oxygen Icon Theme (in battery-applet/icons)
-    Copyright Â© 2007 David Vignoni <david@icon-king.com>
-    Copyright Â© 2007 Johann Ollivier Lapeyre <johann@oxygen-icons.org>
-    Copyright Â© 2007 Kenneth Wimer <kwwii@bootsplash.org>
-    Copyright Â© 2007 Nuno Fernades Pinheiro <nf.pinheiro@gmail.com>
-    Copyright Â© 2007 Riccardo Iaconelli <riccardo@oxygen-icons.org>
-    Copyright Â© 2007 David Miller <miller@oxygen-icons.org>
+    Copyright © 2007 David Vignoni <david@icon-king.com>
+    Copyright © 2007 Johann Ollivier Lapeyre <johann@oxygen-icons.org>
+    Copyright © 2007 Kenneth Wimer <kwwii@bootsplash.org>
+    Copyright © 2007 Nuno Fernades Pinheiro <nf.pinheiro@gmail.com>
+    Copyright © 2007 Riccardo Iaconelli <riccardo@oxygen-icons.org>
+    Copyright © 2007 David Miller <miller@oxygen-icons.org>
 
 
-Licence for applets and folders	arss
+Licence for applets and folders	animal-farm
 				awnsystemmonitor
-				awnterm
-				battery-applet
-				cairo-menu
-				cairo-menu-classic
+				battery
 				calendar
 				comics
-				filebrowser
+				feeds
 				file-browser-launcher
-				lastfm
-				libawn-extras
 				main-menu
 				media-control
 				media-icon-*
 				MiMenu
-				mount-applet
-				notification-area
-				places
-				plugger
-				python-test
-				quit-applet
-				rtm
-				separator
-				shiny-switcher
+				mount
+				quit
+				slickswitcher
 				stack
-				switcher
 				to-do
-				trash
-				trasher
 				weather
 				wobblyzini
 and files:
-			trash/applet.c
-			src/affinity/eggaccelerators.*
-			src/affinity/egg-pixbuf-thumbnail.*
+	applets/maintained/shiny-switcher/shiny-prefs.py
+	applets/maintained/awnterm/eggaccelerators.c
+	applets/maintained/awnterm/keybinder.c
+	applets/maintained/cairo-clock/sun.py
+	applets/maintained/notification-area/egg-tray-child.c
+	applets/maintained/notification-area/eggtraymanager.c
+	applets/maintained/notification-area/eggtraymanager.h
+	applets/maintained/notification-area/egg-tray-child.h
+	shared/python/awnmediaplayers.py
+	shared/python/__init__.py
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Lesser General Public
@@ -124,30 +105,7 @@ and files:
 
    See also /usr/share/common-licenses/LGPL-2
 
-Licence for src/calendar/google/
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
- 
-       http://www.apache.org/licenses/LICENSE-2.0
- 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-
-   See also /usr/share/common-licenses/Apache-2.0 for the complete licence.
-
-
-Licence for volume-control/Themes/Black is Creative Commons Attribution-Share 
-Alike 3.0 License.
-
-   See below for the complete licence.
-
 Licence for applets and folder 	thinkhdaps
-				pynot
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -162,6 +120,37 @@ Licence for applets and folder 	thinkhdaps
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
   See also /usr/share/common-licenses/GPL-3
+
+Licence for shared/python/threadqueue.py
+
+  Copyright (C) 2009  Danielle Madeley <danielle@madeley.id.au>
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice,
+    this list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+  * The names of its contributors may not be used to endorse or promote
+    products derived from this software without specific prior written
+    permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  POSSIBILITY OF SUCH DAMAGE.
+
+  See also /usr/share/common-licenses/BSD
 
 License (for others files):
 
