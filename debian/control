@@ -2,24 +2,24 @@ Source: awn-extras-applets
 Section: gnome
 Priority: optional
 Maintainer: Julien Lavergne <julien.lavergne@gmail.com>
-Build-Depends: 	debhelper (>= 7.0.50~),
-		intltool, 
-		libgnome-menu-dev, 
-		libgconf2-dev,
-		librsvg2-dev, 
-		libgtop2-dev, 
-		libawn-dev (>= 0.4.0), 
-		libwnck-dev, 
-		libsexy-dev, 
-		libnotify-dev, 
-		libvte-dev,
-		python-central (>= 0.6.0), 
-		python-gtk2-dev,
-		python-cairo-dev,
-		valac (>= 0.7.7),
-		libwebkit-dev,
-		libdesktop-agnostic-bin,
-		vala-awn
+Build-Depends: debhelper (>= 7.0.50~),
+               intltool, 
+               libgnome-menu-dev, 
+               libgconf2-dev,
+               librsvg2-dev, 
+               libgtop2-dev, 
+               libawn-dev (>= 0.4.0), 
+               libwnck-dev, 
+               libsexy-dev, 
+               libnotify-dev, 
+               libvte-dev,
+               python-central (>= 0.6.0), 
+               python-gtk2-dev,
+               python-cairo-dev,
+               valac (>= 0.7.7),
+               libwebkit-dev,
+               libdesktop-agnostic-bin,
+               vala-awn
 Standards-Version: 3.8.4
 Homepage: https://launchpad.net/awn-extras
 Vcs-Git: git://github.com/gilir/awn-extras-debian.git
@@ -28,17 +28,17 @@ Vcs-Browser: http://github.com/gilir/awn-extras-debian/tree
 
 Package: awn-applets-c-core
 Architecture: any
-Depends: 	${shlibs:Depends}, 
-		${misc:Depends},
-		awn-applets-common,
-		avant-window-navigator,
-Recommends: 	awn-settings (>= 0.3~bzr489),
-		awn-applets-python-core,
-		xdg-utils
-Suggests:	awn-applets-c-extras,
-			gconf-editor,
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+         avant-window-navigator,
+Recommends: awn-settings (>= 0.3~bzr489),
+            awn-applets-python-core,
+            xdg-utils
+Suggests: awn-applets-c-extras,
+          gconf-editor,
 # notification-area
-			python-gconf,
+          python-gconf,
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
  provides some extensions to the bar and some new features (like 
@@ -60,10 +60,10 @@ Description: A collection of applets for avant-window-navigator
 
 Package: awn-applets-c-extras
 Architecture: any
-Depends: 	${shlibs:Depends}, 
-		${misc:Depends},
-		awn-applets-common,
-		avant-window-navigator
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+         avant-window-navigator
 Recommends: awn-settings (>= 0.3~bzr489)
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
@@ -79,25 +79,36 @@ Description: A collection of applets for avant-window-navigator
 
 Package: awn-applets-python-core
 Architecture: all
-Depends: 	${shlibs:Depends}, 
-		${misc:Depends}, 
-		${python:Depends},
-		awn-applets-common,
-		avant-window-navigator,
-		python-awn (>= 0.3.2.1),
-		python-awnlib (>= 0.3.2.2)
-Recommends: 	awn-settings (>= 0.3~bzr489),
-		python-alsaaudio,
-		python-feedparser,
-		python-gst0.10,
-		python-dbus,
-		hal,
-		python-sqlalchemy,
-		sqlite3,
-		python-dateutil,
-		libgweather-common,
-		gnome-applets,
-		python-rsvg | python-gnome2-desktop
+Depends: ${shlibs:Depends}, 
+        ${misc:Depends}, 
+        ${python:Depends},
+        awn-applets-common,
+        avant-window-navigator,
+        python-awn (>= 0.3.2.1)
+Recommends: awn-settings (>= 0.3~bzr489),
+# hardware-sensors, cairo-clock, comics
+            python-rsvg | python-gnome2-desktop,
+# animal-farm
+            fortune,
+# battery
+            hal,
+# comics, battery, thinkhdaps
+            python-notify,
+# cairo-clock
+            python-dateutil,
+            python-gweather,
+# comics, feeds
+            python-feedparser,
+# wolume-control
+            python-gst0.10,
+# cpufreq
+            gnome-applets,
+# feeds
+            python (>= 2.6) | python-simplejson,
+# Stack
+            python-gnomedesktop | python-gnome2-desktop,
+# Dialect
+            python-xklavier,
 Suggests:	awn-applets-python-extras
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
@@ -132,19 +143,23 @@ Description: A collection of applets for avant-window-navigator
 
 Package: awn-applets-python-extras
 Architecture: all
-Depends: 	${shlibs:Depends}, 
-		${misc:Depends}, 
-		${python:Depends},
-		awn-applets-common,
-		avant-window-navigator,
-		python-awn (>= 0.3.2.1),
-		fortune
-Recommends: 	awn-settings (>= 0.3~bzr489),
-		python-rsvg | python-gnome2-desktop,
-		python-xlib
-Suggests: 	tomboy,
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         avant-window-navigator,
+         python-awn (>= 0.3.2.1),
+         fortune
+Recommends: awn-settings (>= 0.3~bzr489),
+# slickswitcher
+            python-wnck | python-gnome2-desktop,
+# calendar
+            python-gdata,
+# YAMA
+            python-gmenu,
+Suggests: tomboy,
 #YAMA
-			alacarte,
+          alacarte,
 Conflicts: awn-applets-python-core (<< 0.3~bzr912)
 Replaces: awn-applets-python-core (<< 0.3~bzr912)
 Description: A collection of applets for avant-window-navigator
@@ -163,10 +178,10 @@ Description: A collection of applets for avant-window-navigator
 Package: python-awn-extras
 Section: python
 Architecture: any
-Depends:	libawn-extras0 (= ${binary:Version}),
-		${shlibs:Depends},
-		${misc:Depends},
-		${python:Depends}
+Depends: libawn-extras0 (= ${binary:Version}),
+         ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends}
 Provides: ${python:Provides}
 Description: Python bindings for avant-window-navigator's applets
  This package provides Python bindings to create and use Python applets with
@@ -177,9 +192,9 @@ Package: awn-applets-c-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: 	${shlibs:Depends}, 
-		${misc:Depends}, 
-		awn-applets-c-extras (= ${binary:Version})
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends}, 
+         awn-applets-c-extras (= ${binary:Version})
 Description: A collection of applets for avant-window-navigator - debug symbols
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
  provides some extensions to the bar and some new features (like 
@@ -189,8 +204,8 @@ Description: A collection of applets for avant-window-navigator - debug symbols
 
 Package: awn-applets-common
 Architecture: any
-Depends: 	${shlibs:Depends}, 
-		${misc:Depends},
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
 Description: A collection of applets for avant-window-navigator - debug symbols
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
  provides some extensions to the bar and some new features (like 
