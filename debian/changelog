@@ -41,8 +41,12 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - Add recommends on python-rsvg and python-wnck on python-core rather
      than python-extras applets Thanks Mark Lee for the patch (LP: #423598).
    - Bump debhelper build-depends to (>= 7.0.50~) for overrides.
+   - Bump build-depends of libawn-dev (>= 0.4.0), valac (>= 0.7.7).
    - Remove libawn-extras and python-awnlib, all merged in python-awn-extras.
    - Replace awn-manager by awn-settings.
+   - Drop build-depends on libgnome-desktop-dev, python*-dev, awn-manager,
+     libglade2-dev and libgnomeui-dev.
+   - Add build-depends on libdesktop-agnostic-bin and vala-awn.
   * debian/rules
    - Rewrite to use overrides and dh_install --fail-missing.
    - Disable dropper (not finished), mimenu (unstable) vala-test python-test 

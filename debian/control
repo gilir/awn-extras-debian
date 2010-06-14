@@ -5,24 +5,21 @@ Maintainer: Julien Lavergne <julien.lavergne@gmail.com>
 Build-Depends: 	debhelper (>= 7.0.50~),
 		intltool, 
 		libgnome-menu-dev, 
-		libgconf2-dev, 
-		libgnome-desktop-dev, 
+		libgconf2-dev,
 		librsvg2-dev, 
 		libgtop2-dev, 
-		libawn-dev (>= 0.3~bzr489), 
+		libawn-dev (>= 0.4.0), 
 		libwnck-dev, 
 		libsexy-dev, 
 		libnotify-dev, 
 		libvte-dev,
 		python-central (>= 0.6.0), 
-		python-dev (>= 2.5),
 		python-gtk2-dev,
 		python-cairo-dev,
-		awn-settings (>= 0.2.6),
-		valac (>= 0.5.4),
+		valac (>= 0.7.7),
 		libwebkit-dev,
-		libglade2-dev,
-		libgnomeui-dev
+		libdesktop-agnostic-bin,
+		vala-awn
 Standards-Version: 3.8.4
 Homepage: https://launchpad.net/awn-extras
 Vcs-Git: git://github.com/gilir/awn-extras-debian.git
