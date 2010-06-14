@@ -10,7 +10,10 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - Fix crash of media-control when Rhythmbox quit (LP: #558463)
    - Fix crash of file-browser-launcher when there is no .gtk-bookmarks
      (LP: #551119)
-  * debian/watch: Update to the new package naming/ 
+  * debian/watch: Update to the new package naming.
+  * debian/control:
+   - Add recommends on python-rsvg and python-wnck on python-core rather
+     than python-extras applets Thanks Mark Lee for the patch (LP: #423598).
 
  -- Julien Lavergne <gilir@ubuntu.com>  Tue, 08 Jun 2010 01:00:15 +0200
 
