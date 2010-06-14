@@ -21,6 +21,13 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - Digital Clock applet rewritten and added.
    - Trasher applet removed.
    - Sysmon applet added.
+  * debian/awn-applets-python-core.install
+   - Arss applet replaced by Feeds applet.
+   - Bandwidth-monitor applet added.
+   - Dialect applet added.
+   - DesktopManager applet removed.
+   - Lastfm applet removed.
+   - Hardware sensors added.
   * debian/control:
    - Description updated with new applets.
    - Add recommends on python-rsvg and python-wnck on python-core rather

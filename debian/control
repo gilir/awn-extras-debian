@@ -103,15 +103,16 @@ Description: A collection of applets for avant-window-navigator
  applets in the gnome-panel).
  .
  This package provides the core Python applets:
-  * animal-farm : Various animals tell your fortune. 
-  * arss: A Python feed launcher.
+  * animal-farm : Various animals tell your fortune.
+  * bandwidth-monitor: Displays information from network.
   * battery-applet: This applet displays your computers current power status.
   * cairo-clock: Displays an analog clock.
   * comics: View your favourite comics on your desktop.
   * cpufreq: Monitors and controls the CPU frequency. 
-  * DesktopManager: Manages the desktop Wallpaper.
+  * dialect: Manages keyboard layouts.
+  * feeds: A Python feed launcher.
   * file-browser-launcher: Launches the user's file manager or opens bookmarks.
-  * lastfm: Stream any of the Last.Fm radios.
+  * hardware sensors: Displays informations from sensors.
   * mail: The Mail Applet lets you check your mail from AWN.
   * media-control: This applet displays album art in a awn dialog while 
     allowing you to control your favorite media players.
@@ -119,8 +120,6 @@ Description: A collection of applets for avant-window-navigator
   * mount-applet: Displays mounts from /etc/fstab and allows one to 
     mount/unmount them.
   * quit-applet: A simple gnome-quit launcher.
-  * showdesktop: Hides/shows all of the windows of the current viewport, 
-    similar to the showdesktop icon of gnome-panel.
   * stack: Provides a convenient location to place commonly used files.
   * thinkhdaps: Displays the status of HDAPS. 
   * todo: Manage a simple To-Do list.
