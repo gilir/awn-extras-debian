@@ -155,14 +155,6 @@ Description: A collection of applets for avant-window-navigator
   * slickswitcher: A visual workspace switcher.
   * tomboy-applet: Control Tomboy with D-Bus.
   * YAMA: Yet another menu applet
-  
-Calendar
-Media-icons
-Pandora
-# SlickSwitcher
-# Stack
-Tomboy
-YAMA
 
 Package: libawn-extras0
 Section: libs
