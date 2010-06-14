@@ -2,7 +2,7 @@ Source: awn-extras-applets
 Section: gnome
 Priority: optional
 Maintainer: Julien Lavergne <julien.lavergne@gmail.com>
-Build-Depends: 	debhelper (>= 7),
+Build-Depends: 	debhelper (>= 7.0.50~),
 		intltool, 
 		libgnome-menu-dev, 
 		libgconf2-dev, 

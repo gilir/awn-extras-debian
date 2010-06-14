@@ -14,6 +14,7 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
   * debian/control:
    - Add recommends on python-rsvg and python-wnck on python-core rather
      than python-extras applets Thanks Mark Lee for the patch (LP: #423598).
+   - Bump debhelper build-depends to (>= 7.0.50~) for overrides.
   * debian/rules
    - Rewrite to use overrides and dh_install --fail-missing.
 
