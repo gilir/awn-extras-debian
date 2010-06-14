@@ -32,10 +32,10 @@ Depends: 	${shlibs:Depends},
 		${misc:Depends}, 
 		avant-window-navigator,
 Recommends: 	awn-settings (>= 0.3~bzr489),
-		gconf-editor,
 		awn-applets-python-core,
 		xdg-utils
 Suggests:	awn-applets-c-extras,
+			gconf-editor,
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
  provides some extensions to the bar and some new features (like 
