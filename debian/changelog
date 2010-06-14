@@ -11,11 +11,11 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - Fix crash of file-browser-launcher when there is no .gtk-bookmarks
      (LP: #551119)
   * debian/watch: Update to the new package naming.
-  * debian/awn-applets-c-core.applets:
+  * debian/awn-applets-c-core-applets.install:
    - Plugger applet removed.
    - Separator applet move to Awn package.
    - Trash applet replace by Garbage applet.
-   - Show desktop applet rewrited and added.
+   - Show desktop applet rewritten and added.
   * debian/awn-applets-extras-applets.install
    - Filebrowser applet removed.
    - Digital Clock applet rewritten and added.
