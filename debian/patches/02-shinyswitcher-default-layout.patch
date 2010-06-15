@@ -1,21 +1,21 @@
 #Set the layout to 4x1 workspaces by default, and applet's size to 80% of the bar.
 
-Index: awn-extras-applets/src/shiny-switcher/shinyswitcher.schema-ini
+Index: awn-extras-applets/applets/maintained/shiny-switcher/awn-applet-shinyswitcher.schema-ini.in
 ===================================================================
---- awn-extras-applets.orig/src/shiny-switcher/shinyswitcher.schema-ini	2008-06-06 16:22:54 +0000
-+++ awn-extras-applets/src/shiny-switcher/shinyswitcher.schema-ini	2009-03-20 13:29:41 +0000
+--- awn-extras-applets.orig/applets/maintained/shiny-switcher/awn-applet-shinyswitcher.schema-ini.in	2010-06-08 00:59:53.000000000 +0200
++++ awn-extras-applets/applets/maintained/shiny-switcher/awn-applet-shinyswitcher.schema-ini.in	2010-06-16 00:31:22.000000000 +0200
 @@ -1,11 +1,11 @@
  [DEFAULT/rows]
- type = int
+ type = integer
 -default = 2
 +default = 1
- description = The number of rows in the pager.
+ _description=The number of rows in the pager.
  
  [DEFAULT/columns]
- type = int
+ type = integer
 -default = 3
 +default = 4
- description = The number of columns in the pager.
+ _description=The number of columns in the pager.
  
  [DEFAULT/background_alpha_active]
 @@ -20,7 +20,7 @@
@@ -24,7 +24,6 @@ Index: awn-extras-applets/src/shiny-switcher/shinyswitcher.schema-ini
  type = float
 -default = 0.95
 +default = 0.8
- description = Scales the applet size relative to the maximum icon size
+ _description=Scales the applet size relative to the maximum icon size
  
  [DEFAULT/show_icon_mode]
-
