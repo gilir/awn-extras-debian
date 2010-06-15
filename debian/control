@@ -38,6 +38,8 @@ Suggests: awn-applets-c-extras,
           gconf-editor,
 # notification-area
           python-gconf,
+Replaces: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1)
+Conflicts: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1)
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
  provides some extensions to the bar and some new features (like 
@@ -64,6 +66,8 @@ Depends: ${shlibs:Depends},
          awn-applets-common,
          avant-window-navigator
 Recommends: awn-settings (>= 0.3~bzr489)
+Conflicts: awn-applets-python-extras (<< 0.4.0-1)
+Replaces: awn-applets-python-extras (<< 0.4.0-1)
 Description: A collection of applets for avant-window-navigator
  Awn-extras-applets is a collection of applets for avant-window-navigator. It
  provides some extensions to the bar and some new features (like 
