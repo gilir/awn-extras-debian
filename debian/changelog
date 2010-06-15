@@ -21,6 +21,7 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - Show desktop applet move from python-core to awn-core.
    - Digital Clock applet move from python-extras to awn-extras.
    - Mimenu applet desactived.
+  * debian/series: disable 01-ftbfs-python-2.6.patch. 
   * debian/watch: Update to the new package naming.
   * debian/control:
    - Description updated with new applets.
