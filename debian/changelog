@@ -50,6 +50,7 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
   * debian/awn-applets-c-core.links: dropped, not needed.
   * debian/libawn-extras*: Removed, libawn-extras was removed upstream.
   * debian/python-awnlib*: Merged with python-awn-extras.
+  * debian/python-awn-extras.install: Install only py files.
   * debian/copyright:
    - Update copyright and licenses.
 
