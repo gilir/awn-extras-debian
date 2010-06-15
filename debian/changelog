@@ -10,39 +10,25 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - Fix crash of media-control when Rhythmbox quit (LP: #558463)
    - Fix crash of file-browser-launcher when there is no .gtk-bookmarks
      (LP: #551119)
-  * debian/watch: Update to the new package naming.
-  * debian/awn-applets-c-core-applets.install:
-   - Plugger applet removed.
+  * Update applets location:
+   - Plugger, Filebrowser, Trasher, DesktopManager, Lastfm, Meebo, Digg, Pynot,
+     RTM applets removed.
+   - Sysmon, Bandwidth-monitor, Dialect, Hardware sensors, YAMA, Slickswitcher
+     applets added
    - Separator applet move to Awn package.
-   - Trash applet replace by Garbage applet.
-   - Show desktop applet rewritten and added.
-  * debian/awn-applets-extras-applets.install
-   - Filebrowser applet removed.
-   - Digital Clock applet rewritten and added.
-   - Trasher applet removed.
-   - Sysmon applet added.
-  * debian/awn-applets-python-core.install
+   - Trash applet replaced by Garbage applet.
    - Arss applet replaced by Feeds applet.
-   - Bandwidth-monitor applet added.
-   - Dialect applet added.
-   - DesktopManager applet removed.
-   - Lastfm applet removed.
-   - Hardware sensors added.
-  * debian/awn-applets-python-extras.install:
-   - Meebo applet removed.
-   - Digg applet removed.
+   - Show desktop applet move from python-core to awn-core.
+   - Digital Clock applet move from python-extras to awn-extras.
    - Mimenu applet desactived.
-   - Pynot applet removed. 
-   - RTM applet removed.
-   - YAMA applet added.
-   - Slickswitcher applet added.
+  * debian/watch: Update to the new package naming.
   * debian/control:
    - Description updated with new applets.
    - Update Depends, Recommends and Suggests for all applets and add comments.
    - Add recommends on python-rsvg and python-wnck on python-core rather
-     than python-extras applets Thanks Mark Lee for the patch (LP: #423598).
+     than python-extras applets. Thanks Mark Lee for the patch (LP: #423598).
    - Bump debhelper build-depends to (>= 7.0.50~) for overrides.
-   - Bump build-depends of libawn-dev (>= 0.4.0), valac (>= 0.7.7).
+   - Bump build-depends libawn-dev (>= 0.4.0) and valac (>= 0.7.7).
    - Remove libawn-extras and python-awnlib, all merged in python-awn-extras.
    - Replace awn-manager by awn-settings.
    - Drop build-depends on libgnome-desktop-dev, python*-dev, awn-manager,
@@ -51,11 +37,13 @@ awn-extras-applets (0.4.0-1) UNRELEASED; urgency=low
    - Demote gconf-editor to Suggest, it's only needed for very advanced
      settings.
    - Add a debug package for C applets.
-   - Add a common package for translation, and make it depends on all applets packages.
-   - Add proper Conflicts/Replaces for updates of applets location.
+   - Add a common package for translations, and make it depends on all applets
+     packages.
+   - Add proper Conflicts/Replaces for updates of applets location
+     (LP: #524559).
   * debian/rules
    - Rewrite to use overrides and dh_install --fail-missing.
-   - Disable dropper (not finished), mimenu (unstable) vala-test python-test 
+   - Disable dropper (not finished), mimenu (unstable) vala-test, python-test
      wobblyzini (only for development purpose) applets.
   * debian/awn-applets-c-core.links: dropped, not needed.
   * debian/libawn-extras*: Removed, libawn-extras was removed upstream.
