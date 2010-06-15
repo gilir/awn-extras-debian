@@ -31,7 +31,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          awn-applets-common,
          avant-window-navigator,
-Recommends: awn-settings (>= 0.3~bzr489),
+Recommends: awn-settings,
             awn-applets-python-core,
             xdg-utils
 Suggests: awn-applets-c-extras,
@@ -65,7 +65,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          awn-applets-common,
          avant-window-navigator
-Recommends: awn-settings (>= 0.3~bzr489)
+Recommends: awn-settings
 Conflicts: awn-applets-python-extras (<< 0.4.0-1)
 Replaces: awn-applets-python-extras (<< 0.4.0-1)
 Description: A collection of applets for avant-window-navigator
@@ -102,7 +102,7 @@ Recommends: awn-settings (>= 0.3~bzr489),
             python-gweather,
 # comics, feeds
             python-feedparser,
-# wolume-control
+# volume-control
             python-gst0.10,
 # cpufreq
             gnome-applets,
@@ -151,8 +151,7 @@ Depends: ${shlibs:Depends},
          ${python:Depends},
          awn-applets-common,
          avant-window-navigator,
-         python-awn (>= 0.3.2.1),
-         fortune
+         python-awn (>= 0.3.2.1)
 Recommends: awn-settings (>= 0.3~bzr489),
 # slickswitcher
             python-wnck | python-gnome2-desktop,
