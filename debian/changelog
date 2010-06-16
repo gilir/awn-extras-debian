@@ -18,8 +18,8 @@ awn-extras-applets (0.4.0-1) unstable; urgency=low
    - Separator applet move to Awn package.
    - Trash applet replaced by Garbage applet.
    - Arss applet replaced by Feeds applet.
-   - Show desktop applet move from python-core to awn-core.
-   - Digital Clock applet move from python-extras to awn-extras.
+   - Showdesktop applet move from python-core to c-core.
+   - Digital Clock applet move from python-extras to c-extras.
    - Mimenu applet desactived.
   * debian/series: disable 01-ftbfs-python-2.6.patch.
   * debian/patches/02-shinyswitcher-default-layout.patch refreshed. 
@@ -36,7 +36,7 @@ awn-extras-applets (0.4.0-1) unstable; urgency=low
    - Drop build-depends on libgnome-desktop-dev, python*-dev, awn-manager,
      libglade2-dev and libgnomeui-dev.
    - Add build-depends on libdesktop-agnostic-bin and vala-awn.
-   - Demote gconf-editor to Suggest, it's only needed for very advanced
+   - Demote gconf-editor to Suggests, it's only needed for very advanced
      settings.
    - Add a debug package for C applets.
    - Add a common package for translations, and make it depends on all applets
@@ -45,7 +45,7 @@ awn-extras-applets (0.4.0-1) unstable; urgency=low
      (LP: #524559).
   * debian/rules
    - Rewrite to use overrides and dh_install --fail-missing.
-   - Disable dropper (not finished), mimenu (unstable) vala-test, python-test
+   - Disable dropper (not finished), mimenu (unstable) vala-test, python-test,
      wobblyzini (only for development purpose) applets.
    - Remove useless call to dh_makeshlibs.
    - Add dh_strip call for awn-applets-c-dbg binary.
