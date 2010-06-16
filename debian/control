@@ -128,7 +128,7 @@ Description: A collection of applets for avant-window-navigator
   * dialect: Manages keyboard layouts.
   * feeds: A Python feed launcher.
   * file-browser-launcher: Launches the user's file manager or opens bookmarks.
-  * hardware sensors: Displays informations from sensors.
+  * hardware sensors: Displays information from sensors.
   * mail: The Mail Applet lets you check your mail from AWN.
   * media-control: This applet displays album art in a awn dialog while 
     allowing you to control your favorite media players.
