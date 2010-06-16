@@ -49,6 +49,7 @@ awn-extras-applets (0.4.0-1) unstable; urgency=low
      wobblyzini (only for development purpose) applets.
    - Remove useless call to dh_makeshlibs.
    - Add dh_strip call for awn-applets-c-dbg binary.
+   - Make scripts executable.
   * debian/awn-applets-c-core.links: dropped, not needed.
   * debian/libawn-extras*: Removed, libawn-extras was removed upstream.
   * debian/python-awnlib*: Merged with python-awn-extras.

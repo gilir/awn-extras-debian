@@ -33,6 +33,9 @@ override_dh_install:
 		rm -f $(CURDIR)/debian/tmp/usr/share/avant-window-navigator/applets/$${applet}/*.ui; \
 		rm -f $(CURDIR)/debian/tmp/usr/share/avant-window-navigator/applets/$${applet}.desktop; \
 	done
+	#Make script executable
+	chmod +x $(CURDIR)/debian/tmp/usr/share/avant-window-navigator/applets/comics/comics.sh
+
 	dh_install --fail-missing
 
 override_dh_auto_test:

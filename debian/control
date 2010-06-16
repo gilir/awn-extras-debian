@@ -180,7 +180,8 @@ Description: A collection of applets for avant-window-navigator
 Package: python-awn-extras
 Section: python
 Architecture: any
-Depends: ${shlibs:Depends},
+Depends: libawn-extras0 (= ${binary:Version}),
+         ${shlibs:Depends},
          ${misc:Depends},
          ${python:Depends}
 Provides: ${python:Provides}
